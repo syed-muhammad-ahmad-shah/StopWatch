@@ -3,9 +3,125 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(30, 30, 30);
+    color: rgb(242, 237, 237);
+    font-family: sans-serif;
+}
 #display{
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    border: 5px solid rgb(242, 237, 237);
+    padding: 1em 0;
+    width: 40%;
+    margin: 2em auto;
+    font-size: 1.5rem;
+    border-radius: 3px;
 }
+/* .button{
+    background-color: ;
+} */
+@-webkit-keyframes stripe-slide {
+    0% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  @keyframes stripe-slide {
+    0% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  #btn{
+    /* background-color: red; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .button {
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    line-height: normal;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 36px 22px;
+    background-color: #fff;
+    color: #666;
+    border: 2px solid #666;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    transition: all 0.5s ease;
+  }
+  .button:-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+  .button--stripe {
+    overflow: hidden;
+    position: relative;
+  }
+  .button--stripe:after {
+    content: "";
+    display: block;
+    height: 7px;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 2px, transparent 5px);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-top: 1px solid #666;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-size: 7px 7px;
+  }
+  .button--stripe:hover {
+    background-color: rgb(102, 102, 102);
+    color: #fff;
+    border-color: #000;
+  }
+  .button--stripe:hover:after {
+    background-image: repeating-linear-gradient(45deg, #fff, #fff 1px, transparent 2px, transparent 5px);
+    border-top: 1px solid #000;
+    -webkit-animation: stripe-slide 12s infinite linear forwards;
+            animation: stripe-slide 12s infinite linear forwards;
+  }
+  /* .button--start:hover{
+    background-color: green;
+  }
+  .button--stop:hover{
+      background-color: yellow;
+      color: rgb(30, 30, 30);
+    }
+    .button--reset:hover{
+      background-color: red;
+  } */
+  .button--radius {
+    border-radius: 36px;
+  }
+li{
+    color: rgb(242, 237, 237); 
+    list-style: none;
+    background-color: rgb(102, 102, 102);
+    width: 30vw;
+    text-align: center;
+    padding: 1em 0;
+    font-weight: bold;
+    border-radius: 3px;
+    margin: .5em auto;
+}
+
