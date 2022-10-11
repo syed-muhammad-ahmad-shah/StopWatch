@@ -42,10 +42,11 @@ body{
   #btn{
     /* background-color: red; */
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1em;
+    margin: 0 auto;
   }
   .button {
     overflow: visible;
@@ -79,7 +80,7 @@ body{
     content: "";
     display: block;
     height: 7px;
-    width: 90%;
+    width: 100%;
     background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 2px, transparent 5px);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
