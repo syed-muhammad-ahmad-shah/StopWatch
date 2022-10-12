@@ -3,10 +3,12 @@ let m = 0;
 let s = 0;
 let ms = 0;
 let st ;
+let count
 function start(){
     if(!st){
 
         st = setInterval(timer,10)
+        count = 1
     }
 }
 function timer(){
@@ -35,16 +37,18 @@ function reset(){
     m = 0;
     s = 0;
     ms = 0;
+    count = 0;
     // document.getElementById("timer").innerHTML = (h < 10?"0"+h:h)+":"+(m < 10?"0"+m:m)+":"+(s < 10?"0"+s:s)+":"+(ms < 10?"0"+ms:ms);
     document.getElementById("timer").innerHTML = "00:00:00:00"
     stop()
 }
 function lap(){
-    let li = document.createElement("li");
-    li.setAttribute("class","lap")
-    li.innerHTML = (h < 10?"0"+h:h)+":"+(m < 10?"0"+m:m)+":"+(s < 10?"0"+s:s)+":"+(ms < 10?"0"+ms:ms);
-    let ul = document.getElementById("laps");
-    ul.appendChild(li);
-
+    if(count == 1){
+        let li = document.createElement("li");
+        li.setAttribute("class","lap")
+        li.innerHTML = (h < 10?"0"+h:h)+":"+(m < 10?"0"+m:m)+":"+(s < 10?"0"+s:s)+":"+(ms < 10?"0"+ms:ms);
+        let ul = document.getElementById("laps");
+        ul.appendChild(li);
+    }
 }
 
