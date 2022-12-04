@@ -144,16 +144,16 @@ code below is just for Reference
 // function startObj(start) {
 //     this.startAttribute = start
 //     this.startMethod = function () {
-//         console.log("lkjlkj")
+//         console.log("lsblk")
 //         if(!st) {
 //             st = setInterval(timer,10)
 //             count = 1
-//             console.log("lkjlkj")
+//             console.log("lsblk")
 //         }
 //     }
 // }
 // let startObject = new startObj(str)
-// console.log("kljl",startObject.start)
+// console.log("clj",startObject.start)
 // start.addEventListener("click",function(){
 //      startObject.startMethod;
 //     //  console.log(startObj.start)
