@@ -73,6 +73,13 @@ let resetObject = {
         // document.getElementById("timer").innerHTML = (h < 10?"0"+h:h)+":"+(m < 10?"0"+m:m)+":"+(s < 10?"0"+s:s)+":"+(ms < 10?"0"+ms:ms);
         document.getElementById("timer").innerHTML = "00:00:00:00"
         stopObject.stopMethod()
+        // let li = document.querySelector("li");
+        //     li.remove()
+        //remove all li from ul
+        var listElements = document.querySelectorAll("#laps li");
+        for (var i = 0; (li = listElements[i]); i++) {
+        li.parentNode.removeChild(li);
+        }
     }
 }
 // this resetHtml is declared above
@@ -83,10 +90,10 @@ resetHtml.addEventListener("click", function() {
 // ======================== lap obj =================================
 let lapObject = {  
     lapMethod : function () {
-        if(count == 1){
+        if(count === 1){
             let li = document.createElement("li");
             li.setAttribute("class","lap")
-            li.innerHTML = (h < 10?"0"+h:h)+":"+(m < 10?"0"+m:m)+":"+(s < 10?"0"+s:s)+":"+(ms < 10?"0"+ms:ms);
+            li.innerHTML = (h < 10?"0" + h:h) + ":" + (m < 10?"0"+m:m) + ":" + (s < 10?"0"+s:s) + ":" + (ms < 10?"0" + ms:ms);
             let ul = document.getElementById("laps");
             ul.appendChild(li);
         }
