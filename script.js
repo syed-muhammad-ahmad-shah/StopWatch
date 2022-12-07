@@ -77,6 +77,8 @@ let resetObject = {
         //     li.remove()
         //remove all li from ul
         var listElements = document.querySelectorAll("#laps li");
+        // console.log(listElements[0])            // <li class="lap">00:00:01:90</li>
+        // console.log(listElements[0].parentNode) //<ul id="laps"></ul>
         for (var i = 0; (li = listElements[i]); i++) {
         li.parentNode.removeChild(li);
         }
